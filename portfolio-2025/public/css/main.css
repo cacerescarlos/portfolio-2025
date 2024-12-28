@@ -1,0 +1,25 @@
+.background-banner {
+    background-size: 100% 100%;
+}
+
+
+.logo-header{
+    height: auto;
+    width: 120px;
+}
+
+/* Media Query for PC */
+@media only screen and (min-width:968px) {
+    .h1-port {
+        font-size: 52px;
+    }
+
+    .background-banner {
+        max-height: 400px;
+        background-size: 100% 100%;
+        /* background-image: url(images/banner/bgx3.jpg); */
+    }
+
+
+
+}

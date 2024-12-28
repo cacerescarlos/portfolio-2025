@@ -67,7 +67,17 @@
                 "input": "src/theme/variables.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "src/public/plugins/jQuery/jquery.min.js",
+              "src/public/plugins/bootstrap/bootstrap.min.js",
+              "src/public/plugins/magnific-popup/jquery.magnific.popup.min.js",
+              "src/public/plugins/slick/slick.min.js",
+              "src/public/plugins/mixitup/mixitup.min.js",
+              "src/public/plugins/syotimer/jquery.syotimer.js",
+              "src/public/plugins/aos/aos.js",
+              "src/public/js/main.js",
+              "src/public/js/script.js"
+            ]
           },
           "configurations": {
             "production": {

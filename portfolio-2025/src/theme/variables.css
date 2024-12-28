@@ -8,3 +8,16 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+@import "../../public/plugins/bootstrap/bootstrap.min.css";
+@import "../../public/plugins/magnific-popup/magnific-popup.css";
+
+@import "../../public/plugins/slick/slick.css";
+@import "../../public/plugins/slick/slick-theme.css";
+@import "../../public/plugins/themify-icons/themify-icons.css";
+@import "../../public/plugins/animate/animate.css";
+@import "../../public/plugins/aos/aos.css";
+
+
+@import "../../public/css/main.css";
+@import "../../public/css/style.css";
