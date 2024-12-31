@@ -1,0 +1,73 @@
+
+  <!-- FIXME: Dividir en seciones como ser : Certificaciones/Cursos/Otros-acm -->
+  <section id="section-education" class="mission section bg-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="section-title-sm">Educación</h5>
+          <h2 class="section-title section-title-border-half">
+            Habilidades </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="mb-40">
+                <!-- FIXME: Cambiar texto -->
+                El objetivo es llegar a emprender e innovar en bolivia con el desarrollo web y
+                desarrollo de aplicaciones móviles con diseños moderno y amigables de clase mundial.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="col-lg-6">
+          <div id="accordion">
+            <div class="card border-0 mb-4" *ngFor="let education of educations; let i = index">
+              <div class="card-header bg-gray border p-0">
+                <button
+                  class="card-link h6 d-block text-dark mb-0 py-10 px-4"
+                  (click)="toggleAccordion(i)"
+                >
+                  <i [class]="isOpen(i) ? 'ti-minus text-primary mr-2' : 'ti-plus text-primary mr-2'"></i>
+                  {{ education.title }}
+                </button>
+              </div>
+              <div *ngIf="isOpen(i)" class="card-body font-secondary text-color pl-4 pb-3">
+                {{ education.body }}
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+
+        <div class="col-lg-6 ml-auto">
+          <div class="rounded p-sm-5 px-3 py-5 bg-secondary">
+            <h3 class="section-title section-title-border-half text-white">¿ Qué me caracteriza ?</h3>
+            <p class="text-white mb-40">
+              Me considero una persona capaz de superar cualquier reto que se presente o se proponga,
+              en el desarrollo de un proyecto.
+            </p>
+            <div>
+              <ul>
+                <li class="font-secondary mb-10 text-white float-sm-left mr-sm-5">
+                  <i class="text-primary mr-2 ti-arrow-circle-right"></i>
+                  Autodidata
+                </li>
+                <li class="font-secondary mb-10 text-white">
+                  <i class="text-primary mr-2 ti-arrow-circle-right"></i>
+                  Perseverancia
+                </li>
+                <li class="font-secondary mb-10 text-white">
+                  <i class="text-primary mr-2 ti-arrow-circle-right"></i>
+                  Trabajo en equipo
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+      </div>
+    </div>
+  </section>

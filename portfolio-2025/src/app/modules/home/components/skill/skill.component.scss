@@ -1,0 +1,36 @@
+.skill-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+  
+    .skill-slider {
+      width: 100%;
+      max-width: 1200px; /* Limita el ancho del carrusel */
+      margin: 0 auto; /* Centra el carrusel horizontalmente */
+      overflow: hidden;
+      position: relative;
+  
+      .slider-track {
+        display: flex;
+        width: calc(200%); /* Doble ancho para efecto infinito */
+        transition: transform 0.1s linear;
+      }
+  
+      .slider-item {
+        flex: 0 0 auto;
+        width: 150px;
+        margin: 0 10px;
+        text-align: center;
+  
+        img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease-in-out;
+        }
+  
+        img:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  

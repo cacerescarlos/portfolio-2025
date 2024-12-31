@@ -59,7 +59,7 @@
                 Hola, yo soy </h4>
               <h2 class="font-weight-bold mb-3 h1-port celeste" data-duration-in=".5" data-animation-in="fadeInLeft"
                 data-delay-in=".5">
-                Carlos Caceres </h2>
+                Your Name </h2>
               <p class="text-dark mb-20" data-duration-in=".5" data-animation-in="fadeInLeft" data-delay-in=".9">
                 Ingeniero de Software con más de 4 años de experiencia en desarrollo de soluciones web y móviles,
                 integración de sistemas y automatización de procesos. Adaptable y analítico, con facilidad para aprender
@@ -72,7 +72,7 @@
           </div>
 
           <div class="col-lg-5 col-sm-12 pr-0 text-center">
-            <img class="img-fluid" style="max-height: 380px;" src="images/p_03.png" alt="perfil">
+            <img class="img-fluid" style="max-height: 380px;" src="images/client.png" alt="perfil">
           </div>
         </div>
       </div>
@@ -80,100 +80,13 @@
 
   </section>
 
-  <section id="section-skills" class="bg-gray py-4">
-    <div class="container">
-      <h5 class="text-center font-weight-bold"> Habilidades</h5>
-      <div id="div_skill" class="client-logo-slider align-self-center"></div>
-    </div>
-  </section>
+  <app-skill></app-skill>
 
-  <section id="section-portfolio" class="section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h5 class="section-title-sm">Proyectos personales y laborales</h5>
-          <h2 class="section-title section-title-border-gray">Proyectos</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="project-menu text-center">
-            <ul class="controls list-inline">
-              <li class="list-inline-item control active" data-filter="all">Todos</li>
-              <li class="list-inline-item control" data-filter=".Marketing-Online">App móviles</li>
-              <li class="list-inline-item control" data-filter=".Business-Strategy">Paginas Web</li>
-              <li class="list-inline-item control" data-filter=".Ecomerce-Advice">Sistemas de Gestion</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="div_work" class="row work-slider"></div>
-    </div>
-  </section>
+  <app-project></app-project>
 
+  <app-education></app-education>
 
-  <!-- FIXME: Dividir en seciones como ser : Certificaciones/Cursos/Otros-acm -->
-  <section id="section-education" class="mission section bg-white py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h5 class="section-title-sm">Educación</h5>
-          <h2 class="section-title section-title-border-half">
-            Habilidades </h2>
-          <div class="row">
-            <div class="col-lg-6">
-              <p class="mb-40">
-                <!-- FIXME: Cambiar texto -->
-                El objetivo es llegar a emprender e innovar en bolivia con el desarrollo web y
-                desarrollo de aplicaciones móviles con diseños moderno y amigables de clase mundial.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--  -->
-        <div class="col-lg-6">
-          <div id="accordion" class="mb-md-50"></div>
-        </div>
-
-
-        <div class="col-lg-6 ml-auto">
-          <div class="rounded p-sm-5 px-3 py-5 bg-secondary">
-            <h3 class="section-title section-title-border-half text-white">¿ Qué me caracteriza ?</h3>
-            <p class="text-white mb-40">
-              Me considero una persona capaz de superar cualquier reto que se presente o se proponga,
-              en el desarrollo de un proyecto.
-            </p>
-            <div>
-              <ul>
-                <li class="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                  <i class="text-primary mr-2 ti-arrow-circle-right"></i>
-                  Autodidata
-                </li>
-                <li class="font-secondary mb-10 text-white">
-                  <i class="text-primary mr-2 ti-arrow-circle-right"></i>
-                  Perseverancia
-                </li>
-                <li class="font-secondary mb-10 text-white">
-                  <i class="text-primary mr-2 ti-arrow-circle-right"></i>
-                  Trabajo en equipo
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-
-      </div>
-    </div>
-  </section>
-
-
-  <section id="section-contact" class="mission section bg-white py-4">
-    <div class="container">
-    </div>
-  </section>
-
+  <app-contact></app-contact>
 
 
 

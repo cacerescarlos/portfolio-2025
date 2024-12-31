@@ -1,0 +1,50 @@
+<section id="section-portfolio" class="section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h5 class="section-title-sm">Proyectos personales y laborales</h5>
+        <h2 class="section-title section-title-border-gray">Proyectos</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="project-menu text-center">
+          <ul class="controls list-inline">
+            <li
+            [ngClass]="{ 'active': activeFilter === 'all' }"
+            class="list-inline-item control" (click)="filterWorks('all')">Todos</li>
+            <li [ngClass]="{ 'active': activeFilter === 'WEB' }" 
+            class="list-inline-item control" (click)="filterWorks('WEB')">Web</li>
+            <li [ngClass]="{ 'active': activeFilter === 'APP' }"  
+            class="list-inline-item control" (click)="filterWorks('APP')">App</li>
+            <li [ngClass]="{ 'active': activeFilter === 'UX' }"  
+            class="list-inline-item control" (click)="filterWorks('UX')">UX</li>
+            <li [ngClass]="{ 'active': activeFilter === 'SOFT' }"  
+            class="list-inline-item control" (click)="filterWorks('SOFT')">Sistemas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row work-slider">
+      <div class="col-lg-3 px-0" *ngFor="let work of filteredWorks">
+        <div class="work-slider-image" style="max-height: 200px;">
+          <img class="img-fluid w-100" [src]="pathWork + work.image" [alt]="work.name" />
+          <div class="image-overlay">
+            <a (click)="openImageViewer(pathWork + work.image)" class="popup-image" href="javascript:void(0)">
+              <i class="ti-search"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para mostrar la imagen seleccionada -->
+  <div class="image-modal" *ngIf="selectedImage" (click)="closeImageViewer()">
+    <div class="image-modal-content" (click)="preventClose($event)">
+      <img [src]="selectedImage" alt="work-image" />
+      <button class="close-modal" (click)="closeImageViewer()">×</button>
+    </div>
+  </div>
+  
+</section>

@@ -1,0 +1,17 @@
+<section class="skill-section">
+  <div class="skill-slider">
+    <div class="slider-track" [style.transform]="transformStyle">
+      <div *ngFor="let skill of skills" class="slider-item">
+        <a [href]="skill.link" target="_blank" rel="noopener noreferrer">
+          <img [src]="skill.logo" [alt]="skill.name" />
+        </a>
+      </div>
+      <!-- Repite los elementos para crear el efecto infinito -->
+      <div *ngFor="let skill of skills" class="slider-item">
+        <a [href]="skill.link" target="_blank" rel="noopener noreferrer">
+          <img [src]="skill.logo" [alt]="skill.name" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
